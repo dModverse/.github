@@ -1,13 +1,13 @@
 # dModverse
 
-R and Python packages for ODE models of biochemical reaction networks: simulation with
-sensitivities, parameter estimation and structural identifiability analysis.
+R and Python packages for dynamical models: simulation with sensitivities, parameter
+estimation and structural identifiability analysis.
 
 | Package | What it does |
 |---|---|
-| [**dMod2**](https://github.com/dModverse/dMod2)<br><sub>R</sub> | Models, objectives, optimisers and profile likelihoods for ODE models; PEtab import and export. Successor to [dMod](https://github.com/JetiLab/dMod). |
-| [**cppDE**](https://github.com/dModverse/cppDE)<br><sub>R,&nbsp;C++</sub> | Generated C++ for ODE integration with forward and reverse sensitivities to second order, events and switches; the backend of dMod2. |
-| [**symident**](https://github.com/dModverse/symident)<br><sub>Python,&nbsp;C++</sub> | Structural identifiability by Lie symmetries over finite fields, with reduction to identifiable parameters. [Documentation](https://dmodverse.github.io/symident/) |
+| [**dMod2**](https://github.com/dModverse/dMod2)<br><sub>R,&nbsp;C++</sub> | Parameter estimation in dynamical models: ODE models compiled with first- and second-order sensitivities, fitted by trust-region optimization with multi-start search and profile likelihood, also for mixed-effects models; PEtab and SBML exchange. Successor to [dMod](https://github.com/JetiLab/dMod). |
+| [**cppDE**](https://github.com/dModverse/cppDE)<br><sub>R,&nbsp;C++</sub> | Writes, compiles and runs a C++ solver for ODEs given as equations in R, with derivatives propagated forward on dual numbers or backward by a discrete adjoint, to first and second order; the default solver backend of dMod2. |
+| [**symident**](https://github.com/dModverse/symident)<br><sub>Python,&nbsp;C++</sub> | Finds the non-identifiable directions of dynamical models by Lie symmetries over finite fields, returns them as exact generators, reduces the model to identifiable parameters, and counts discrete symmetries in the parameter domain. |
 
 ## Installation
 
